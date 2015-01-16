@@ -2,14 +2,16 @@ package org.usfirst.frc.team581.robot.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
 
+
 /**
  *
  */
-public class driverDrive extends Command {
+public class driverDrive extends CommandBase {
 
     public driverDrive() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
+    	requires(drive);  
     }
 
     // Called just before this Command runs the first time
